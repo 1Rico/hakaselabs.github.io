@@ -8,9 +8,9 @@ author: "@codehakase"
 
 For some PHP developers, the concept of object-orient programming, seems like a frightening concept. You might have browsed through repos on GitHub or read articles on how to implement a feature in a particular PHP project of yours, and the code is full of complicated syntax. I tell you, the concept of OOP is easy to grasp.
 
-**Object-Oriented programming** (OOP), is a style of programming which allows us developers and programmers group related tasks or actions into classes to produce effective code. OOP follows the tenet *"don't repeat yourself (DRY)*, which are comming in procedual programming.
+**Object-Oriented programming** (OOP), is a style of programming which allows us developers and programmers group related tasks or actions into classes to produce effective code. OOP follows the tenet *"don't repeat yourself (DRY)*, which are common in procedural programming.
 ## Why Learn OOP?
-Many frameworks built upon PHP are using the OOP paradgim and if you intend learning one of those frameworks (Laravel, Codeigniter, Symfony, etc), you'll need a ground on OOP to start with.
+Many frameworks built upon PHP are using the OOP paradigm and if you intend learning one of those frameworks (Laravel, Codeigniter, Symfony, etc), you'll need a ground on OOP to start with.
 
 ## Objects and Classes
 In OOP there are two major concepts you'd see often (they really make up OOP), they are **objects** and **classes**. These terms sometimes appear to be interchangeable. That is not the case.
@@ -102,9 +102,9 @@ Any property or method declared as `protected` can only be accessible within tha
 
 A property or method declared as `private`, is only accessible from within the class it was defined in.
 
-## Comparing Procedual code and Object-Oriented code
+## Comparing Procedural code and Object-Oriented code
 *OOP actually provides an easier approach to dealing with data. Because an object can store data internally, variables don't need to be passed from function to function to work properly.*
-Consider the following getter, setter procedual code
+Consider the following getter, setter procedural code
 ```php 
 <?php
 function sample() {
@@ -176,7 +176,7 @@ object(Sample)[4]
 ### Better Code Management
 With OOP, you can manage your files within your application easily, by making use of autoloading.
 
-A typical Procedual dependencies script may look as such:
+A typical procedural dependencies script may look as such:
 ```php 
 <?php
 require_once "php-includes/connect.php"
