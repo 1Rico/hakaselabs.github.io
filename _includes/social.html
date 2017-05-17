@@ -1,0 +1,64 @@
+<style>
+    .share-btns a, img {
+        float: left;
+        padding: 3px;
+    }
+</style>
+<div class="share-btns">
+    <h4> Share this: </h4>
+<a href="https://plus.google.com/share?url=http://hakaselabs.github.io{{ include.url }}&hl=en-US"
+ onclick="javascript:window.open(this.href,'',
+  'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+    <kbd>
+        <img
+            alt="..."
+            class="footer-icon"
+            width="28px"
+            src="/assets/social-icons/gplus.png">
+        </img>
+
+        Google+
+    </kbd>
+</a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://hakaselabs.github.io{{ include.url }}&title={{ include.title }}&source={{ include.title }}">
+    <kbd>
+        <img alt="..."
+            class="footer-icon"
+            width="34px"
+            src="/assets/social-icons/linicon.png">
+        </img>
+
+        Linkedin
+    </kbd>
+</a>
+<a href="https://www.facebook.com/dialog/share?app_id=161188361052684&display=popup&href=http://hakaselabs.github.io{{ include.url }}&redirect_uri=http://hakaselabs.github.io{{ include.url }}">
+    <kbd>
+        <img
+            alt="..."
+            class="footer-icon"
+            width="25px"
+            src="/assets/social-icons/fbicon.png">
+        </img>
+        Facebook
+    </kbd>
+</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="true">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<!--faceboo sdk -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 161188361052684,
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
