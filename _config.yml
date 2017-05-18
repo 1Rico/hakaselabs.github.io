@@ -9,7 +9,7 @@ permalink:        pretty
 title:            HakaseLabs
 tagline:          'Endless possiblities through tech.'
 description:      'Titles on Software Development, and everything-in-between. All articles are written by Francis Sunday, Software Developer and Tech Enthusiast .'
-url:              http://hakaselabs.github.io
+url:              https://hakaselabs.github.io
 baseurl:          /
 
 author:
