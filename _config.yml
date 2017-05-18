@@ -27,3 +27,18 @@ github:
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-seo-tag
+
+twitter:
+  username: codehakase
+social: 
+  name: Francis Sunday
+  links:
+    - https://twitter.com/codehakase
+    - https://facebook.com/codehakase
+    - https://medium.com/@codehakase
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/bg.jpg
