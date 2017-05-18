@@ -28,6 +28,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 twitter:
   username: codehakase
