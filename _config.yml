@@ -29,6 +29,7 @@ gems:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 twitter:
   username: codehakase
