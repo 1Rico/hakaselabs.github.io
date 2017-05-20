@@ -16,7 +16,7 @@ A Promise is a proxy for a value not necessarily known when the promise is creat
 
 ## How Promises work
 A promise, returns an object synchronously from asynchronous function, in three possible states:
-* Fuilfield `resolve()` - The action relating to the promise succeeded
+* Fuilfiled `resolve()` - The action relating to the promise succeeded
 * Rejected `reject()` - The action relating to the promise failed
 * Pending - not yet fulfilled or rejected
 * Settled - Has fulfilled or rejected
