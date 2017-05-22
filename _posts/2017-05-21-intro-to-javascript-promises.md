@@ -8,9 +8,6 @@ author: "@codehakase"
 JavaScript promises have become a popular way to handle the tangled mess that JavaScript’s asynchronous nature often creates for us. 
 Synchronous code is eaiser to follow and debug, async is better for flexibiity. Promises are becomming a big part of the JavaScript world, with awesome APIs implemented with it.
 
-![Promise]({{site.url}}/assets/promise.jpg "Promise")
-
-
 ## What is a Promise?
 
 A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future. - **Mozilla Developer Network (MDN)**
