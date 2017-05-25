@@ -15,6 +15,7 @@ let car = {
     colour: "black",
 }
 ```
+
 In the code above, we created a variable `car` which is now an object, and has some `key-value` pairs inside. The `type` and `colour` items inside our car object are referred to as properties, and they hold their various values. 
 If we log to our console the type of our car variable, we'd get an object `console.log(typeof car); //object` .
 
