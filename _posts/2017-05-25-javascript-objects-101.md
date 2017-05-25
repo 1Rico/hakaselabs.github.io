@@ -155,7 +155,7 @@ document.getElementById('info').innerHTML = userInfo.display();
 ```
 Preview
 
-![Objects-demo]({{site.url}}/assets/Objects-demo.gif "Objects Demo") &nbsp; &nbsp; &nbsp;
+![Objects-demo]({{site.url}}/assets/Objects-demo.gif "Objects Demo") &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
 ### Summary
 In this title, we walked through the basics of Objects in JavaScript. In the next part (*JavaScript Objects 102*), I'll be writing on Object Oriented programming in JavaScript, with highlights on Prototypes, Inheritance, and Constructors. 
