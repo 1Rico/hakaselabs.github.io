@@ -155,7 +155,7 @@ document.getElementById('info').innerHTML = userInfo.display();
 ```
 Preview
 
-![Objects-demo]({{site.url}}/assets/Objects-demo.gif "Objects Demo") &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+![Objects-demo]({{site.url}}/assets/Objects-demo.gif "Objects Demo")  
 
 
 ### Summary
