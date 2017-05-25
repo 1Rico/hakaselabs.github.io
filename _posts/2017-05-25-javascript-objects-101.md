@@ -114,7 +114,7 @@ console.log( car );
 ### Try It
 We've covered a lot of ground so far, to make sure everything we learned so far sinks in, open up your favourite editor (mine is VSCode), and try a quick example.
 
-Create a basic `HTML` markup with two text fields `name`, `age` and a ` submit` button. Make sure all the form fields has an ID.
+Create a basic `HTML` markup with two text fields `name`, `age` and a `submit` button. Make sure all the form fields has an ID.
 In your JavaScript file, grab the items from the text fields when the submit button is clicked and add the values of the form fields to a `userInfo` object.
 Display the inputs from the text fields to the browser in a `div`.
 
@@ -157,7 +157,7 @@ Preview
 
 ![Objects-demo]({{site.url}}/assets/Objects-demo.gif "Objects Demo")
 
-
+---
 ### Summary
 In this title, we walked through the basics of Objects in JavaScript. In the next part (*JavaScript Objects 102*), I'll be writing on Object Oriented programming in JavaScript, with highlights on Prototypes, Inheritance, and Constructors. 
 Have any questions? Drop them in the comment box below.
