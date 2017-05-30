@@ -4,7 +4,9 @@ author: "@codehakase"
 title: "Making hakasebot - Twitter Bots 101"
 comments: true
 ---
-
+![Bots]({{ site.url }}/assets/twitter-bots.gif "Bots")  
+ 
+  
 This was my first attempt making twitter bots. I made a very simple twitter bot for this blog, check the [Source](https://github.com/codehakase/hakasebot) and also follow [@_hakasebot](https://twitter.com/_hakasebot).
 
 ## Setting Up
