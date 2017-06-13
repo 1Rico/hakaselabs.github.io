@@ -11,7 +11,7 @@ tags: "node.js, api, rest, node"
 For the purpose of this tutorial, you'll be creating the base for a *ToDo List* application (yeah its kinda like the convention to start with ToDo list apps). You'll use all CRUD (create, read, update and delete) actions on the API.
 
 # What is REST?
-REST is an acronym for Rpresentational State Transfer. It is a web standards architecture and HTTP Protocol. The REST protocol, decribes six (6) constraints:
+REST is an acronym for Representational State Transfer. It is a web standards architecture and HTTP Protocol. The REST protocol, decribes six (6) constraints:
 1. Uniform Interface
 2. Cacheable
 3. Client-Server
