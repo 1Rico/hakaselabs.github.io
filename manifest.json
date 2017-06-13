@@ -1,10 +1,10 @@
 {
   "name": "HakaseLabs - Articles on Software Development written by Francis Sunday",
-  "short_name": "HakaseLabs - blog",
+  "short_name": "HakaseLabs",
   "gcm_sender_id": "nSsNceWbYZMPCTTO-d4f0IcVJJtkckmIStQhFCNjn00",
   "display": "standalone",
   "start_url": "/index.html",
-  "theme_color": "#673ab6",
+  "theme_color": "#ffc300",
   "background_color": "#111111",
   "icons": [
     {

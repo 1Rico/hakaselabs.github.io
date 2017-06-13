@@ -12,6 +12,10 @@ self.addEventListener('install', function(e) {
         return cache.addAll([
             '/',
             '/index.html',
+            '/*.html',
+            '/*.css',
+            '/*.js',
+            '/*.md'
 
         ]);
     })
