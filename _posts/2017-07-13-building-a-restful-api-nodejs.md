@@ -68,7 +68,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser);
+const bodyParser = require('body-parser');
 
 // get our server running
 app.listen(port, () => {
@@ -167,7 +167,7 @@ let TaskSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema)
+module.exports = mongoose.model('Tasks', TaskSchema);
 ```
 
 In the `taskModel` file, we created a schema for it. As you can see, it the task collection(table) will contain a name: a string, and the date it was created.
@@ -176,8 +176,8 @@ In the `taskModel` file, we created a schema for it. As you can see, it the task
 Remember those methods attached to each verb in the `todoRoutes.js` file, they are controller methods, and we are creating them in the `api/controllers/todoController.js` file:
 
 ```javascript
-const mongoose = require('mongoose'),
-const Task = mongoose.model('Tasks');
+const mongoose = require("mongoose");
+const Task = mongoose.model("Tasks");
 
 // get all tasks
 
@@ -242,15 +242,15 @@ Back in our `server.js` file, we'll connect to our database, by adding a URL to 
 Update your `server.js` file to look like this:
 
 ```javascript
-const express = require('express'); // express framework
+const express = require("express"); // express framework
 const app = express();
 const port = process.env.PORT || 3000;
-const mongoose = require('mongoose');
-const Task = require('./api/models/todoListModel');
+const mongoose = require("mongoose");
+const Task = require("./api/models/todoListModel");
 const bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:2701/todoApp'); // connect to MongoDB
+mongoose.connect("mongodb://localhost:2701/todoApp"); // connect to MongoDB
 
 // handle incoming requests
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -259,10 +259,10 @@ app.use(bodyParser.json());
 // middleware to handle wrong routes 
 
 app.use( (req, res) => {
-    res.status(404).send({ url: req.originalUrl + 'not found' })
+    res.status(404).send({ url: req.originalUrl + 'not found' });
 });
 
-let routes = require('./api/routes/todoListRoute');
+let routes = require("./api/routes/todoListRoute");
 routes(app); // register our routes
 
 app.listen(port); 
