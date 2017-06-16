@@ -2,11 +2,9 @@ var cacheName = 'hakaseBlog-1';
 var filesToCache = [
         '/',
         '/index.html',
-        '/assets/',
         '/public/css/hyde.css',
         '/public/css/poole.css',
         '/public/css/syntax.css',
-        '/2017/',
     ];
 
 // activate the service worker
