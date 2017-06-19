@@ -40,7 +40,6 @@ function displaySearchResults(results, store) {
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('author');
-      this.field('category');
       this.field('content');
     });
 
@@ -49,7 +48,6 @@ function displaySearchResults(results, store) {
         'id': key,
         'title': window.store[key].title,
         'author': window.store[key].author,
-        'category': window.store[key].category,
         'content': window.store[key].content
       });
 
