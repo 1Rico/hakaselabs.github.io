@@ -1,7 +1,6 @@
 var cacheName = 'hakaseBlog-1';
 var filesToCache = [
         '/',
-        '/index.html',
         '/public/css/hyde.css',
         '/public/css/poole.css',
         '/public/css/syntax.css',
@@ -42,7 +41,7 @@ self.addEventListener('install', function(e) {
     );
 });
 
-// Fetch Cached items 
+// Fetch Cached items
 self.addEventListener("fetch", function(event) {
     event.respondWith(
         caches.match(event.request).then(function(response) {
