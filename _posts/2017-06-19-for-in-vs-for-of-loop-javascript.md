@@ -3,6 +3,7 @@ title: "for...in vs for...of Loops in JavaScript"
 layout: post
 author: "@codehakase"
 ---
+![for-in-graphics](https://user-images.githubusercontent.com/9336187/27305938-97169192-553b-11e7-99cb-99396a9593fd.png "Hakase Labs")
 
 The `for..in` and `for..of` loops, gives us a clean and concise syntax to iterate on iterable items like arrays, strings, objects, and enumerables. Now the question is where to use which.
 Here's a little reminder to get you you started.
