@@ -56,7 +56,7 @@ self.addEventListener("fetch", function(event) {
 function fromCache(request) {
     return caches.open(cacheName)
             .then(function(cache) {
-                return cache.match(request);
+                return cache.match(request)
             });
 }
 function update(request) {
