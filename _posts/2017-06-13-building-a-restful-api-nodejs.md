@@ -22,12 +22,12 @@ REST is an acronym for Representational State Transfer. It is a web standards ar
 REST is composed of methods such as a base URL, media types, etc. RESTful applicaitons uses HTTP requests to perform the CRUD operations.
 
 
-# Setup 
+# Setup
 You'll need to have Node installed, if not in place get in [here](https://howtonode.org/how-to-install-nodejs).
 
-I'm on Elementary OS (an Ubuntu flavoured distro), so i'll be using the command line alot. 
+I'm on Elementary OS (an Ubuntu flavoured distro), so i'll be using the command line alot.
 
-In a new directory `todoApp` or whatever you'd like to name yours, we'll need a `package.json` file, so we'll use `npm` to generate one: 
+In a new directory `todoApp` or whatever you'd like to name yours, we'll need a `package.json` file, so we'll use `npm` to generate one:
 ```shell
 npm init
 ```
@@ -46,7 +46,7 @@ After the package installation is done, your complete `package.json` file should
   "name": "todoApp",
   "version": "0.0.0",
   "description": "Building a REST API with Node.js",
-  
+
   "author": "Francis Sunday",
   "license": "MIT",
   "dependencies": {
@@ -91,7 +91,7 @@ We need to structure or directory so we have dedicated files for various actions
     - package.json
     ...
 ```
-We create the dedicated files in their directories- 
+We create the dedicated files in their directories-
 `
 api/models/todoModel.js
 api/controllers/todoController.js
@@ -121,7 +121,7 @@ You're also gonna need to test your API while developing, so we'll use an awesom
 #### Your First Route
 Routing refers to determining how an application responds to requests, which is a URI and a specific request method (POST, GET, DELETE, etc).
 
-We're gonna define two basic routes `/tasks` and `/tasks/{taskid}` 
+We're gonna define two basic routes `/tasks` and `/tasks/{taskid}`
 ```javascript
 // api/models/todoRoutes.js
 
@@ -130,9 +130,9 @@ module.exports = (app) => {
 
     // our Routes
     app.route('/tasks')
-        .get(todoList.getTasks) 
+        .get(todoList.getTasks)
         .post(todoList.createTask);
-    
+
     app.route('/tasks/:taskId')
         .get(todoList.readTask)
         .put(todoList.updateTask)
@@ -185,7 +185,7 @@ exports.getTasks = (req, res) => {
     Task.find({}, (err, task) => {
         if (err)
             res.send(err);
-        
+
         res.json(task);
     });
 };
@@ -197,12 +197,12 @@ exports.createTask = (req, res) => {
     newTask.save( (err, task) => {
         if (err)
             res.send(err);
-        
+
         res.json(task);
     });
 };
 
-// read a single task 
+// read a single task
 
 exports.readTask = (req, res) => {
     Task.findById(req.params.id, (err, task) => {
@@ -213,18 +213,18 @@ exports.readTask = (req, res) => {
     });
 };
 
-// update a particular task 
+// update a particular task
 
 exports.updateTask = (req, res) => {
   Task.findOneAndUpdate(req.params.id, req.body, { new: true }, (err, task) => {
-    if (err) 
+    if (err)
         res.send(err);
 
     res.json(task);
   });
 };
 
-// delete a single task 
+// delete a single task
 
 exports.deleteTask = (req, res) => {
     Task.remove({
@@ -256,7 +256,7 @@ mongoose.connect("mongodb://localhost:2701/todoApp"); // connect to MongoDB
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// middleware to handle wrong routes 
+// middleware to handle wrong routes
 
 app.use( (req, res) => {
     res.status(404).send({ url: req.originalUrl + 'not found' });
@@ -265,7 +265,7 @@ app.use( (req, res) => {
 let routes = require("./api/routes/todoListRoute");
 routes(app); // register our routes
 
-app.listen(port); 
+app.listen(port);
 console.log('App running on ' + port);
 
 ```
@@ -280,10 +280,12 @@ To test your API using postman, startup the server `nodemon server.js` and then 
 ![node-api-postman-post](https://user-images.githubusercontent.com/9336187/27061119-6f56e13c-4fd9-11e7-9ebc-5b5afb1aac01.png)
 > Note: To use the post method on postman, the *Body* should be set to *x-www-form-urlencode*
 
-## That's it!
-You have a working Node.js API which makes use of the four major HTTP verbs (GET, POST, PUT, DELETE). 
+[**Update: 2017-06-24** Source code for this tutorial -> [Here](https://github.com/HakaseLabs/source-blog/tree/master/rest-api-nodejs)]
 
-This tutorial was created to give you a familarity with the Node.js development environment along side Express.js and MongoDB. 
+## That's it!
+You have a working Node.js API which makes use of the four major HTTP verbs (GET, POST, PUT, DELETE).
+
+This tutorial was created to give you a familarity with the Node.js development environment along side Express.js and MongoDB.
 
 Was this helpful? feel free to leave a comment below. Also, if you have questions, noticed an error, please do well to let me know.
 

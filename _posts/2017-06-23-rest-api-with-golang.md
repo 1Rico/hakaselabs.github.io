@@ -257,6 +257,8 @@ func main() {
 ## Testing
 To test out yor API, either view them from a browser (you'd need a JSON formatter extension, to read the output clearly) or use [Postman](https://getpostman.com).
 
+> Source for this tutorial can be found [here](https://github.com/HakaseLabs/source-blog/tree/master/rest-api)
+
 ## Conclusion
 You just saw how to build a very simple RESTful API using the Go programming language.  While we used mock data instead of a database, we saw how to create endpoints that do various operations with JSON data and GoLang slices.
 Did I miss anything important? Let me know in the comments.
