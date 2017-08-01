@@ -49,7 +49,7 @@ bookTaxi()
 
 > The `async` function declaration defines an asynchronous function, which returns an AsycFunction object.
 
-The `await` operator is used to wait fro a Promise. It can only be used inside an `async` function - MDN
+> The `await` operator is used to wait fro a Promise. It can only be used inside an `async` function - MDN
 
 
 ##### Another Example
