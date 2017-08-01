@@ -18,7 +18,7 @@ If this is your first time seeing/hearing of this term, here's it in plain Engli
 - Aysnc/await cannot be used with plain callbacks
 
 
-#### Them Vs Promises (Syntax)
+#### Async/Await Vs Promises (Syntax)
 Lets write a function that returns a Promise, which resolves with some data object. When its called, it logs, and return something:
 ```javascript
 const bookTaxi = () => {
