@@ -16,6 +16,8 @@ If this is your first time seeing/hearing of this term, here's it in plain Engli
 - Async/await compared to Promises, are non-blocking
 - Async/await makes aysnchronous code appear and behave like synchronous code.
 - Aysnc/await cannot be used with plain callbacks
+
+
 #### Them Vs Promises (Syntax)
 Lets write a function that returns a Promise, which resolves with some data object. When its called, it logs, and return something:
 ```javascript
@@ -26,12 +28,12 @@ const bookTaxi = () => {
             return "done"
         })
 }
-
 bookTaxi()
 
 ```
 
 Implemting same with async/await:
+
 ```javascript
 const bookTaxi = async () => {
     console.log(await getAvailableDrivers() )
@@ -48,6 +50,7 @@ bookTaxi()
 > The `async` function declaration defines an asynchronous function, which returns an AsycFunction object.
 
 The `await` operator is used to wait fro a Promise. It can only be used inside an `async` function - MDN
+
 
 ##### Another Example
 A simple `async` function to resolve after a specific time.
@@ -72,10 +75,6 @@ add(20).then( value => {
     console.log(value); // prints 90 after 5 seconds.
 })
 ```
-#### Support
-<p class="ciu_embed" data-feature="async-functions" data-periods="future_1,current,past_1,past_2">
-  <a href="http://caniuse.com/#feat=async-functions">Can I Use async-functions?</a> Data on support for the async-functions feature across the major browsers from caniuse.com.
-</p>
 
 ### But I like Promises!! Why is it better? :(
 Yeah Promises are super awesome, but here are some things that make these guys thick:
