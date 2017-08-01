@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "JavaScript Async/Await like i'm 5"
+title: "JavaScript Async/Await 101"
 comments: true
 author: "@codehakase"
 ---
-![async/await]({{ site.url }}/assets/async-await.png "Hello world")
+![async/await]({{ site.url }}/assets/aysnc-await.png "Async/await")
 
 Async and Await has been a blessing to most JavaScript Developers. Even on its [Stage 4 proposal](https://github.com/tc39/ecma262/tree/82bebe057c9fca355cfbfeb36be8e42f18c61e94) for ES6, the feature has been warmtly welcomed.
 
