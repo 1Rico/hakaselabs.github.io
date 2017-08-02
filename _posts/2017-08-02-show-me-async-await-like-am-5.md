@@ -6,7 +6,7 @@ author: "@codehakase"
 ---
 ![async/await]({{ site.url }}/assets/aysnc-await.png "Async/await")
 
-Async and Await has been a blessing to most JavaScript Developers. Even on its [Stage 4 proposal](https://github.com/tc39/ecma262/tree/82bebe057c9fca355cfbfeb36be8e42f18c61e94) for ES6, the feature has been warmtly welcomed.
+Async and Await has been a blessing to most JavaScript Developers. Even while it was on the [Stage 4 proposal](https://github.com/tc39/ecma262/tree/82bebe057c9fca355cfbfeb36be8e42f18c61e94) for ES6, the feature has been warmtly welcomed.
 
 Node.js now Supports async/await since its version 7.6.
 
@@ -32,7 +32,7 @@ bookTaxi()
 
 ```
 
-Implemting same with async/await:
+Implementing same with async/await:
 
 ```javascript
 const bookTaxi = async () => {
@@ -43,7 +43,7 @@ const bookTaxi = async () => {
 bookTaxi()
 ```
 
-- The second snippet, has the `async` keyword before it. The `await` keyword can only be used inside functions defined with the `async` keyword. Async functions returns a promise, and the resolved value of the promise wil be whatever is returned from the function.
+- The second snippet, has the `async` keyword before it. The `await` keyword can only be used inside functions defined with the `async` keyword. The Async functions returns a promise, and the resolved value of the promise wil be whatever is returned from the function.
 
 - The `await getAvailableDrivers()` inside the `console.log` literal means the call will wait until the promise `getAvailableDrivers()` resolves and prints its value.
 
@@ -76,7 +76,7 @@ add(20).then( value => {
 })
 ```
 
-### But I like Promises!! Why is it better? :(
+### But I like Promises!! :(
 Yeah Promises are super awesome, but here are some things that make these guys thick:
 
 #### Error handling
@@ -111,7 +111,7 @@ const bookTaxi = async () => {
 The difference between both, is in the async/await part, the catch block will handle parsing errors.
 
 #### Clean code
-We can write much cleaner code (compare the examples from before). Unlike Promises, we didn't have to use `.then()` or create anonymous functions to handle responses, etc. This also makes one avoid nesting Promises, which can sometimes be a mess.
+We can write much cleaner code (compare the examples from before). Unlike Promises, we didn't have to use `.then()` or create anonymous functions to handle responses, etc. This also makes one avoid nested Promises, which can sometimes be a mess.
 
 #### Error Stacks
 If you call multiple promises in a chain, and an error is thrown somewhere in the chain, the error stack gives no clue of where such error occured.
@@ -170,7 +170,7 @@ const bookTaxi = () => {
         })
 }
 ```
-The above looks a bit messy, with all the nest and unstable conditionals. The async/await version is more readable.
+The above looks a bit messy, with all the nesting and unstable conditionals. The async/await version is much more readable.
 ```javascript
 const bookTaxi = async () => {
     const rides = await getRides()
