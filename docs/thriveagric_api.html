@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.2">
-<title>thriveagric_api</title>
+<title>thriveagric_api : Farmers Endpoint API</title>
 <link rel="stylesheet" href="thriveagric_api_files/css.css">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -421,6 +421,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_contact_information">1.2. Contact information</a></li>
 <li><a href="#_uri_scheme">1.3. URI scheme</a></li>
 <li><a href="#_tags">1.4. Tags</a></li>
+<li><a href="#_auth">1.5. Authentication</a></li>
 </ul>
 </li>
 <li><a href="#_paths">2. Paths</a>
@@ -476,6 +477,22 @@ Schemes: HTTPS</p>
 <p>Default: Default section</p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_auth">1.5. Authentication</h3>
+<div class="paragraph">
+<p>Authentication Type: Basic</p>
+<p>This API uses a Basic authentication type, comprizing of both a login and password, concatenated with a colon (:) encoded string</p>
+<p>Credentials: </p>
+<pre>
+  {
+    // btoa() -> encodes to base64 (specific to JavaScript)
+    headers: {
+      "Authorization": "Basic " + btoa("username" + ":" + "password")
+    }
+  }
+</pre>
 </div>
 </div>
 </div>
